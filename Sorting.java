@@ -4,7 +4,8 @@ public class Sorting
    {
       int[] arr = {3,5,4,2,1};
       //bubble(arr);
-      selection(arr);
+      //selection(arr);
+      insertion(arr);
       print(arr);
    }
    public static void bubble(int[] arr)
@@ -36,6 +37,16 @@ public class Sorting
             }
          }
          swap(arr, i, min);
+      }
+   }
+   public static void insertion(int[] arr)
+   {
+      for(int i = 1; i < arr.length; i++)
+      {
+         for(int j = i; j > 0 && arr[j] < arr[j-1]; j--)
+         {
+            swap(arr, j, j-1);
+         }
       }
    }
    public static void swap(int[] arr, int fromIdx, int toIdx)
