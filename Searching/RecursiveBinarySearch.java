@@ -1,4 +1,4 @@
-public class Searching
+public class RecursiveBinarySearch
 {
    public static void main(String[] arg)
    {
